@@ -1,0 +1,28 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background: #222;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.row {
+  width: auto;
+}
+
+span.thanks{
+  color: white;
+  font-size: 1.3em;
+}
