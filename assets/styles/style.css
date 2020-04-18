@@ -2,6 +2,9 @@ html, body {
   font-family: 'Raleway', sans-serif;
   background: #222;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 .container {
@@ -22,7 +25,27 @@ html, body {
   width: auto;
 }
 
-span.thanks{
-  color: white;
-  font-size: 1.3em;
+.thanks-container{
+}
+
+.thanks-container p{
+margin-bottom: 5px;
+}
+
+h1.heading{
+  font-size: 1.4em;
+}
+
+.thanks-to{
+  font-size: 1.2em;
+}
+
+.thanks-who{
+  color: #999;
+  font-size: 0.8em;
+}
+
+.thanks-for{
+  font-size: 1.1em;
+  font-style: italic;
 }
