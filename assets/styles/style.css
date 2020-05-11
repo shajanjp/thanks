@@ -1,51 +1,50 @@
 html, body {
-  font-family: 'Raleway', sans-serif;
+  font-family: Hack, monospace;
   background: #222;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   color: white;
 }
 
-.container {
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
+  width: 100%;
 }
 
-.row {
-  width: auto;
+.middle {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.thanks-container{
+.thanks-container {
+  margin-left: 10%;
+  margin-right: auto;
+  width: 80%;
 }
 
-.thanks-container p{
-margin-bottom: 5px;
+.thanks .for{
+  font-size: 2em;
+  margin: 0px;
 }
 
-h1.heading{
-  font-size: 1.4em;
+.thanks .to-whom{
+  font-size: 1em;
 }
 
-.thanks-to{
-  font-size: 1.2em;
+.thanks .to{
+  color: #CCC;
 }
 
-.thanks-who{
-  color: #999;
+.thanks .who{
   font-size: 0.8em;
+  font-style: italic;
+  color: #F4A261;
 }
 
-.thanks-for{
-  font-size: 1.1em;
-  font-style: italic;
-}
+/*2a9d8f-e9c46a-f4a261-e76f51*/
