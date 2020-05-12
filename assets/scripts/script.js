@@ -13,9 +13,9 @@ function getThanksData() {
 
 function makeThanks(thanksData){
   return `<div class="thanks animate__animated animate__fadeInUp">
-  <p class="for">${thanksData.for}</p>
+  <p class="for">Thank you ${thanksData.for}</p>
   <p class="to-whom">
-  <span class="to">${thanksData.to}</span> - <span class="who">${thanksData.who}</span>
+  <span class="to">${thanksData.to}</span> (<span class="who">${thanksData.who}</span>)
   </p>
   </div>`;
 }
