@@ -3,6 +3,19 @@
 
 const thanksContainer = document.getElementsByClassName('thanks-container')[0];
 
+function generateRandomNumber(min, max){
+  return Math.floor(Math.random() * (max-min) + min);
+}
+
+function shaffle(ordered){
+  let shuffled = [];
+  for(var i=ordered.length; i>0; i--){
+    let r =generateRandomNumber(0, i);
+    shuffled.push(ordered.splice(r, 1)[0])
+  }
+  return shuffled;
+}
+
 function getThanksData() {
   return fetch('{{site.baseurl}}/data/thanks.json')
   .then(res => res.json())
@@ -37,5 +50,5 @@ function startThanking(thanksData){
 
 getThanksData()
 .then(data => {
-  startThanking(data);
+  startThanking(shaffle(data));
 })
