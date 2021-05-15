@@ -29,16 +29,16 @@ html, body {
 }
 
 .thanks .for{
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0px;
 }
 
 .thanks .to-whom{
   font-size: 1em;
+  color: #CCC;
 }
 
 .thanks .to{
-  color: #CCC;
 }
 
 .thanks .who{
